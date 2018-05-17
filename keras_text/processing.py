@@ -326,7 +326,7 @@ class Tokenizer(object):
             progbar.update(indices[0])
 
         # All done. Finalize progressbar.
-        progbar.update(len(texts), force=True)
+        progbar.update(len(texts))#, force=True)
         return encoded_texts
 
     def decode_texts(self, encoded_texts, unknown_token="<UNK>", inplace=True):
